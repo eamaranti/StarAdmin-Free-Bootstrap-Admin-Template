@@ -23,7 +23,7 @@ var paths = gulp.paths;
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        port: 3000,
+        port: 3200,
         server: "./",
         ghostMode: false,
         notify: false
@@ -43,7 +43,7 @@ gulp.task('serve:lite', function() {
     browserSync.init({
         server: "./",
         ghostMode: false,
-        notify: false
+        notify: false,
     });
 
     gulp.watch('**/*.css').on('change', browserSync.reload);
